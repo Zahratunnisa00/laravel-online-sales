@@ -1,4 +1,4 @@
-@@extends('layouts.admin') 
+@extends('layouts.admin') 
 @section('title','Stok') 
 @section('content')<div class="row" style="justify-content:space-between"> 
 <h1>Histori Stok</h1> 
