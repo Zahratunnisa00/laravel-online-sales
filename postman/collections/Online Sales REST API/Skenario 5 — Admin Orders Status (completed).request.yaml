@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/v1/admin/orders/4/status
+method: PATCH
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\": \"completed\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: 2|2kcSvIZbdj6G5RN9Wd63cvMBaXWtKPUIfge52dXE1eb09b7d
+scripts:
+  - type: afterResponse
+    code: "const json = pm.response.json(); \r
+
+      pm.collectionVariables.set('customer_token', json.access_token);"
+    language: text/javascript
+order: 6000
