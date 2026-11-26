@@ -98,7 +98,6 @@ class CheckoutController extends Controller
             foreach ($cart as $productId => $quantity) { 
                 $product = $lockedProducts->get($productId); 
                 $lineTotal = (float) $product->price * $quantity; 
- 
                 $order->items()->create([ 
                     'product_id' => $product->id, 
                     'product_name' => $product->name, 
