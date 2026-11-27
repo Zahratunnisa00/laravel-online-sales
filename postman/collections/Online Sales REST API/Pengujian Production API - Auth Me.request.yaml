@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://laravel-online-sales-4hszbe32o-zahratunnisa00.vercel.app/api/v1/auth/me
+method: GET
+headers:
+  Accept: application/json
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: 2|10DfIk39eZ3EgSPgXVFBj5SMvs4eGj3gguW1BxU1906edb39
+order: 21000
